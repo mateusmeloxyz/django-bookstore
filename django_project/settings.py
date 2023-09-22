@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Local
-    "accounts.apps.AccountsConfig", # new
-    "pages.apps.PagesConfig", # new
+    "accounts.apps.AccountsConfig",
+    "pages.apps.PagesConfig",
 ]
 
 MIDDLEWARE = [
@@ -57,7 +57,7 @@ ROOT_URLCONF = "django_project.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"], # new
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -95,7 +95,7 @@ DATABASES = {
     }
 }
 
-AUTH_USER_MODEL = "accounts.CustomUser" # new
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 
 # Password validation
